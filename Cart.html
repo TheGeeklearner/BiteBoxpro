@@ -4,8 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <script src="https://kit.fontawesome.com/7aca3de0f9.js" crossorigin="anonymous"></script>
+     <link rel="icon" type="images/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>This is Cart page </h1>
+     <header>
+        <nav>
+            <a href="index.html"><img src="images/1logo.png" alt="Biteboxlogo" width="180px"></a>
+            <ul>
+                
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="Menu.html">Menu</i></a></li>
+                <li><a href="BiteDeals.html">Bite Deals</a></li>
+                <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="cart">
+
+        <h2 style="text-align: center; margin: 20px 20px 20px ;">Your Cart</h2>
+        <table>
+            <thead>
+                <th>item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </thead>
+
+            <tbody>
+                <!--each row have 5 td tags -->
+
+                <!--1st row Start-->
+                <tr>
+                    <!--1 td-->
+                    <td class="item">
+                        <img src="images/menu/burger.png">
+                        <div>
+                            <h4>Classic Burger</h4>
+                            <p>Juicy grilled burger</p>
+                        </div>
+                    </td>
+                    <!--2 td-->
+                    <td>₹199</td>
+                    <!--3 td-->
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <!--4 td-->
+                    <td>₹199</td>
+                    <!--5 td-->
+                    <td><button class="remove">❌</button></td>
+                </tr>
+               <!--1st row End -->
+
+               <!--2nd Row Start-->  
+                <tr>
+                    <!--1 td-->
+                    <td class="item">
+                        <img src="images/menu/meal1.jpg">
+                        <div>
+                            <h4>Burger Bliss Combo</h4>
+                            <p>erfect fast-food combo</p>
+                        </div>
+                    </td>
+                    <!--2 td-->
+                    <td>₹249</td>
+                    <!--3 td-->
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <!--4 td-->
+                    <td>₹249</td>
+                    <!--5 td-->
+                    <td><button class="remove">❌</button></td>
+                </tr>
+                <!--2nd row End -->
+
+                <!--3rd row Start-->
+                <tr>
+                    <!--1 td-->
+                    <td class="item">
+                        <img src="images/menu/cheesy pizza.png">
+                        <div>
+                            <h4>Cheesy Pizza (Regular)</h4>
+                            <p>Freshly baked pizza</p>
+                        </div>
+                    </td>
+                    <!--2 td-->
+                    <td>₹299</td>
+                    <!--3 td-->
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <!--4 td-->
+                    <td>₹299</td>
+                    <!--5 td-->
+                    <td><button class="remove">❌</button></td>
+                </tr>
+                <!--3rd row End-->
+                <!--4th row Start-->
+                <tr class="grand-total">
+                    <td colspan="3">Grand Total</td>
+                    <td>₹747</td>
+                    <td><button>Proceed</button></td>
+                </tr>
+                <!--4th row End -->
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
